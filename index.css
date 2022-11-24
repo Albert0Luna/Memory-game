@@ -1,0 +1,58 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background: linear-gradient(to right, rgb(140, 176, 243), #c7e0a3);
+}
+
+h3 {
+    text-align: center;
+    margin: 25px;
+    font-size: 1.7rem;
+    letter-spacing: 2px;
+    font-weight: normal;
+}
+
+span {
+    font-weight: bold;
+}
+
+#grid {
+    display: grid;
+    width: 85%;
+    grid-template-columns: repeat(4,1fr);
+    margin: auto;
+}
+
+.anvers {
+    margin: auto;
+    width: 95%;
+    height: 85%;
+    margin-bottom: 15px;
+    border-radius: 15px;
+    border: 2px solid #333;
+    background-image: cover;
+}
+
+@media screen and (min-width: 800px){
+    
+    h3 {
+        font-size: 2.5rem;
+        margin: 45px;
+    }
+
+    #grid {
+        grid-template-columns: repeat(6,1fr);
+    }
+    
+    .anvers {
+        width: 75%;
+        height: 75%;
+        margin-bottom: 40px;
+    }
+}
+
